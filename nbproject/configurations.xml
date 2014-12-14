@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles" displayName="头文件" projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles" displayName="源文件" projectFiles="true">
+      <logicalFolder name="PictureProcess.git"
+                     displayName="PictureProcess.git"
+                     projectFiles="true">
+        <logicalFolder name="data" displayName="data" projectFiles="true">
+          <itemPath>data/back.bmp</itemPath>
+          <itemPath>data/front.bmp</itemPath>
+          <itemPath>data/overlap.bmp</itemPath>
+        </logicalFolder>
+        <itemPath>Clock.cpp</itemPath>
+        <itemPath>Clock.h</itemPath>
+        <itemPath>Common.h</itemPath>
+        <itemPath>LICENSE</itemPath>
+        <itemPath>LazyBuffer.cpp</itemPath>
+        <itemPath>LazyBuffer.h</itemPath>
+        <itemPath>Main.cpp</itemPath>
+        <itemPath>Makefile</itemPath>
+        <itemPath>Makefile.bak</itemPath>
+        <itemPath>README.md</itemPath>
+        <itemPath>RGBData.cpp</itemPath>
+        <itemPath>RGBData.h</itemPath>
+        <itemPath>TRGB.h</itemPath>
+        <itemPath>bmp2rgb.cpp</itemPath>
+        <itemPath>bmp2rgb.h</itemPath>
+        <itemPath>rgb2bmp.cpp</itemPath>
+        <itemPath>rgb2bmp.h</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles" displayName="资源文件" projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="测试文件"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="重要文件"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+      </compileType>
+      <item path="Clock.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Clock.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Common.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LICENSE" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LazyBuffer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="LazyBuffer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Makefile" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Makefile.bak" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="README.md" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="RGBData.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="RGBData.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TRGB.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="bmp2rgb.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="bmp2rgb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="data/back.bmp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="data/front.bmp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="data/overlap.bmp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="rgb2bmp.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="rgb2bmp.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="Clock.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Clock.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Common.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LICENSE" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LazyBuffer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="LazyBuffer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Makefile" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Makefile.bak" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="README.md" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="RGBData.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="RGBData.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TRGB.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="bmp2rgb.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="bmp2rgb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="data/back.bmp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="data/front.bmp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="data/overlap.bmp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="rgb2bmp.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="rgb2bmp.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
