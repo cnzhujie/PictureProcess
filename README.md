@@ -6,17 +6,17 @@
 <table><tr>
 <td align="center">
 背景图片：<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/back.bmp" width="400">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/back.bmp" width="400">
 </td>
 <td>
 前景图片：
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/front.bmp" width="400">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/front.bmp" width="400">
 </td>
 </tr></table>
 #
 设定透明色为`#000`，则合成的图片如下所示：
 #
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/overlap.bmp" width="400">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/overlap.bmp" width="400">
 
 ##图片翻转
 #
@@ -25,19 +25,19 @@
 <table><tr>
 <td align="center">
 原图<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/source.bmp" width="210">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/source.bmp" width="210">
 </td>
 <td align="center">
 左右翻转<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/flip_LR.bmp" width="210">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/flip_LR.bmp" width="210">
 </td>
 <td align="center">
 上下翻转<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/flip_TD.bmp" width="210">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/flip_TD.bmp" width="210">
 </td>
 <td align="center">
 中心翻转<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/flip_CENTER.bmp" width="210">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/flip_CENTER.bmp" width="210">
 </td>
 </tr></table>
 #
@@ -46,29 +46,29 @@
 <table><tr>
 <td align="center" width="210">
 原图<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/source.bmp" width="210">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/source.bmp" width="210">
 </td>
 <td align="center" width="293">
 逆时针20°<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/flip_ANGLE_20.bmp" width="293">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/flip_ANGLE_20.bmp" width="293">
 </td>
 <td align="center" width="280">
 逆时针90°<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/flip_ANGLE_90.bmp" width="280">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/flip_ANGLE_90.bmp" width="280">
 </td>
 </tr></table>
 <table><tr>
 <td align="center">
 逆时针135°<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/flip_ANGLE_135.bmp" width="346">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/flip_ANGLE_135.bmp" width="346">
 </td>
 <td align="center">
 逆时针180°<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/flip_ANGLE_180.bmp" width="210">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/flip_ANGLE_180.bmp" width="210">
 </td>
 <td align="center">
 逆时针280°<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/flip_ANGLE_280.bmp" width="312">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/flip_ANGLE_280.bmp" width="312">
 </td>
 </tr></table>
 #
@@ -79,11 +79,11 @@
 <table><tr>
 <td align="center">
 原图<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/front.bmp" width="400">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/front.bmp" width="400">
 </td>
 <td align="center">
 #000 -> #fff<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/blackToWhite.bmp" width="400">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/blackToWhite.bmp" width="400">
 </td>
 </tr></table>
 #
@@ -92,11 +92,11 @@
 <table><tr>
 <td align="center">
 原图<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/source.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/source.bmp" width="220">
 </td>
 <td align="center">
 按照彩色转灰度的规则进行替换图像<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/gray.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/gray.bmp" width="220">
 </td>
 </tr></table>
 
@@ -104,19 +104,19 @@
 <table><tr>
 <td align="center">
 原图<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/source.bmp" width="210">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/source.bmp" width="210">
 </td>
 <td align="center">
 (r,g,b)->(r,r,r)<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/singleColor_r.bmp" width="210">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/singleColor_r.bmp" width="210">
 </td>
 <td align="center">
 (r,g,b)->(g,g,g)<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/singleColor_g.bmp" width="210">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/singleColor_g.bmp" width="210">
 </td>
 <td align="center">
 (r,g,b)->(b,b,b)<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/singleColor_b.bmp" width="210">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/singleColor_b.bmp" width="210">
 </td>
 </tr></table>
 
@@ -126,11 +126,11 @@
 <table><tr>
 <td align="center">
 原图<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/source.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/source.bmp" width="220">
 </td>
 <td align="center">
 反色图像<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/inverseColor.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/inverseColor.bmp" width="220">
 </td>
 </tr></table>
 
@@ -139,11 +139,11 @@
 <table><tr>
 <td align="center">
 原图<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/brightness.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/brightness.bmp" width="220">
 </td>
 <td align="center">
 平滑图像<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/smooth.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/smooth.bmp" width="220">
 </td>
 </tr></table>
 
@@ -156,31 +156,31 @@
 <tr>
 <td align="center">
 <br/>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/source.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/source.bmp" width="220">
 </td>
 <td align="center">
 <br/>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/source_neon.bmp" width="220">
-</td>
-</tr>
-<tr>
-<td align="center">
-<br/>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/front.bmp" width="220">
-</td>
-<td align="center">
-<br/>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/front_neon.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/source_neon.bmp" width="220">
 </td>
 </tr>
 <tr>
 <td align="center">
 <br/>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/brightness.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/front.bmp" width="220">
 </td>
 <td align="center">
 <br/>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/brightness_neon.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/front_neon.bmp" width="220">
+</td>
+</tr>
+<tr>
+<td align="center">
+<br/>
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/brightness.bmp" width="220">
+</td>
+<td align="center">
+<br/>
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/brightness_neon.bmp" width="220">
 </td>
 </tr>
 </tbody></table>
@@ -194,43 +194,43 @@
 <tr>
 <td align="center">
 <br/>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/source.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/source.bmp" width="220">
 </td>
 <td align="center">
 <br/>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/source_otsn.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/source_otsn.bmp" width="220">
 </td>
 <td align="center">
 阈值：128<br/>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/source_binaryzation.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/source_binaryzation.bmp" width="220">
 </td>
 </tr>
 <tr>
 <td align="center">
 <br/>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/front.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/front.bmp" width="220">
 </td>
 <td align="center">
 <br/>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/front_otsn.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/front_otsn.bmp" width="220">
 </td>
 <td align="center">
 阈值：10<br/>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/front_binaryzation.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/front_binaryzation.bmp" width="220">
 </td>
 </tr>
 <tr>
 <td align="center">
 <br/>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/brightness.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/brightness.bmp" width="220">
 </td>
 <td align="center">
 <br/>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/brightness_otsn.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/brightness_otsn.bmp" width="220">
 </td>
 <td align="center">
 阈值：128<br/>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/brightness_binaryzation.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/brightness_binaryzation.bmp" width="220">
 </td>
 </tr>
 </tbody></table>
@@ -240,30 +240,30 @@
 <table><tr>
 <td align="center">
 原图<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/brightness.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/brightness.bmp" width="220">
 </td>
 <td align="center">
 原图亮度的120%<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/scalelight.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/scalelight.bmp" width="220">
 </td>
 <td align="center">
 原图亮度的50%<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/scaledark.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/scaledark.bmp" width="220">
 </td>
 </tr></table>
 ###按像素值调节亮度
 <table><tr>
 <td align="center">
 原图<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/brightness.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/brightness.bmp" width="220">
 </td>
 <td align="center">
 原图像素值加30<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/steplight.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/steplight.bmp" width="220">
 </td>
 <td align="center">
 原图像素值减30<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/stepdark.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/stepdark.bmp" width="220">
 </td>
 </tr></table>
 
@@ -271,19 +271,19 @@
 <table><tr>
 <td align="center">
 原图<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/brightness.bmp" width="210">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/brightness.bmp" width="210">
 </td>
 <td align="center">
 (r,g,b)->(r-10,g-20,b+30)<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/tuneHue_30_-20_-10.bmp" width="210">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/tuneHue_30_-20_-10.bmp" width="210">
 </td>
 <td align="center">
 (r,g,b)->(r+10,g+20,b-30)<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/tuneHue_-30_20_10.bmp" width="210">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/tuneHue_-30_20_10.bmp" width="210">
 </td>
 <td align="center">
 (r,g,b)->(r+10,g-20,b+30)<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/tuneHue_30_-20_10.bmp" width="210">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/tuneHue_30_-20_10.bmp" width="210">
 </td>
 </tr></table>
 
@@ -292,30 +292,30 @@
 <table><tr>
 <td align="center">
 原图<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/brightness.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/brightness.bmp" width="220">
 </td>
 <td align="center">
 80%<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/zoomTo0.8.bmp" width="176">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/zoomTo0.8.bmp" width="176">
 </td>
 <td align="center">
 180%<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/zoomTo1.8.bmp" width="396">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/zoomTo1.8.bmp" width="396">
 </td>
 </tr></table>
 ##双线性内插值（失真度小）
 <table><tr>
 <td align="center">
 原图<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/brightness.bmp" width="220">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/brightness.bmp" width="220">
 </td>
 <td align="center">
 80%<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/zoomToLinear0.8.bmp" width="176">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/zoomToLinear0.8.bmp" width="176">
 </td>
 <td align="center">
 180%<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/zoomToLinear1.8.bmp" width="396">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/zoomToLinear1.8.bmp" width="396">
 </td>
 </tr></table>
 
@@ -323,19 +323,19 @@
 <table><tr>
 <td align="center">
 原图<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/source.bmp" width="210">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/source.bmp" width="210">
 </td>
 <td align="center">
 下移100像素<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/circularShift_0_-100.bmp" width="210">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/circularShift_0_-100.bmp" width="210">
 </td>
 <td align="center">
 右移100像素<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/circularShift_100_0.bmp" width="210">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/circularShift_100_0.bmp" width="210">
 </td>
 <td align="center">
 下移100像素,右移100像素<br>
-<img src="http://bcs.duapp.com/cnzhujie/github/pictureprocess/circularShift_100_-100.bmp" width="210">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/circularShift_100_-100.bmp" width="210">
 </td>
 </tr></table>
 
