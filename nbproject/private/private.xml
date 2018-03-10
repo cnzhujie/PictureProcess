@@ -6,6 +6,17 @@
     </data>
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/Users/kaiji/workspace/cnzhujie/PictureProcess/bmp.h</file>
+            <file>file:/Users/kaiji/workspace/cnzhujie/PictureProcess/bmp.cpp</file>
+            <file>file:/Users/kaiji/workspace/cnzhujie/PictureProcess/Clock.h</file>
+            <file>file:/Users/kaiji/workspace/cnzhujie/PictureProcess/Makefile</file>
+            <file>file:/Users/kaiji/workspace/cnzhujie/PictureProcess/README.md</file>
+            <file>file:/Users/kaiji/workspace/cnzhujie/PictureProcess/bmp2rgb.h</file>
+            <file>file:/Users/kaiji/workspace/cnzhujie/PictureProcess/LazyBuffer.h</file>
+            <file>file:/Users/kaiji/workspace/cnzhujie/PictureProcess/RGBData.h</file>
+            <file>file:/Users/kaiji/workspace/cnzhujie/PictureProcess/Common.h</file>
+            <file>file:/Users/kaiji/workspace/cnzhujie/PictureProcess/rgb2bmp.h</file>
+        </group>
     </open-files>
 </project-private>

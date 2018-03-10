@@ -35,12 +35,11 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Bmp.o \
 	${OBJECTDIR}/Clock.o \
 	${OBJECTDIR}/LazyBuffer.o \
 	${OBJECTDIR}/Main.o \
-	${OBJECTDIR}/RGBData.o \
-	${OBJECTDIR}/bmp2rgb.o \
-	${OBJECTDIR}/rgb2bmp.o
+	${OBJECTDIR}/RGBData.o
 
 
 # C Compiler Flags
@@ -67,6 +66,11 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/pictureprocess: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/pictureprocess ${OBJECTFILES} ${LDLIBSOPTIONS}
 
+${OBJECTDIR}/Bmp.o: Bmp.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Bmp.o Bmp.cpp
+
 ${OBJECTDIR}/Clock.o: Clock.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -86,16 +90,6 @@ ${OBJECTDIR}/RGBData.o: RGBData.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/RGBData.o RGBData.cpp
-
-${OBJECTDIR}/bmp2rgb.o: bmp2rgb.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/bmp2rgb.o bmp2rgb.cpp
-
-${OBJECTDIR}/rgb2bmp.o: rgb2bmp.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/rgb2bmp.o rgb2bmp.cpp
 
 # Subprojects
 .build-subprojects:

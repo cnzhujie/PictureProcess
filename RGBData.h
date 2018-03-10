@@ -5,9 +5,7 @@
 #include <string>
 using namespace std;
 
-#include "TRGB.h"
-#include "rgb2bmp.h"
-#include "bmp2rgb.h"
+#include "Bmp.h"
 
 /**
  * RGB像素图片类

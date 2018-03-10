@@ -7,11 +7,8 @@
       <logicalFolder name="PictureProcess.git"
                      displayName="PictureProcess.git"
                      projectFiles="true">
-        <logicalFolder name="data" displayName="data" projectFiles="true">
-          <itemPath>data/back.bmp</itemPath>
-          <itemPath>data/front.bmp</itemPath>
-          <itemPath>data/overlap.bmp</itemPath>
-        </logicalFolder>
+        <itemPath>Bmp.cpp</itemPath>
+        <itemPath>Bmp.h</itemPath>
         <itemPath>Clock.cpp</itemPath>
         <itemPath>Clock.h</itemPath>
         <itemPath>Common.h</itemPath>
@@ -23,11 +20,6 @@
         <itemPath>README.md</itemPath>
         <itemPath>RGBData.cpp</itemPath>
         <itemPath>RGBData.h</itemPath>
-        <itemPath>TRGB.h</itemPath>
-        <itemPath>bmp2rgb.cpp</itemPath>
-        <itemPath>bmp2rgb.h</itemPath>
-        <itemPath>rgb2bmp.cpp</itemPath>
-        <itemPath>rgb2bmp.h</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ResourceFiles" displayName="资源文件" projectFiles="true">
@@ -57,6 +49,10 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="Bmp.cpp" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Bmp.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Clock.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Clock.h" ex="false" tool="3" flavor2="0">
@@ -78,22 +74,6 @@
       <item path="RGBData.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="RGBData.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="TRGB.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="bmp2rgb.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="bmp2rgb.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="data/back.bmp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="data/front.bmp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="data/overlap.bmp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="rgb2bmp.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="rgb2bmp.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -116,6 +96,10 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="Bmp.cpp" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Bmp.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Clock.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Clock.h" ex="false" tool="3" flavor2="0">
@@ -137,22 +121,6 @@
       <item path="RGBData.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="RGBData.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="TRGB.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="bmp2rgb.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="bmp2rgb.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="data/back.bmp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="data/front.bmp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="data/overlap.bmp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="rgb2bmp.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="rgb2bmp.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>
