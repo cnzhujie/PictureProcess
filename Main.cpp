@@ -22,12 +22,12 @@ void overlap(string bk, string front, string save, PicOverlapIsTranColorFunc pPi
 void flip(string pic, string save, int flipType);
 void flipAngle(string pic, string save, double angle, TRGB blankColor = TRGB(255, 255, 255));
 
-void color_replace(string pic, string save, TRGB& from, TRGB& to);
+void colorReplace(string pic, string save, TRGB& from, TRGB& to);
 typedef void (*ColorReplaceFunc)(TRGB&);
-void color_replace(string pic, string save, ColorReplaceFunc pColorReplaceFunc);
+void colorReplace(string pic, string save, ColorReplaceFunc pColorReplaceFunc);
 
-void color2gray(TRGB& t);
-void picture2gray(string pic, string save);
+void colorToGray(TRGB& t);
+void pictureToGray(string pic, string save);
 
 void scaleBrightness(string pic, string save, double zoomLevel);
 void stepBrightness(string pic, string save, char step);
@@ -60,90 +60,92 @@ void cameo(string pic, string save);
 void cameo(string pic, string save, char add);
 
 int main() {
+    string picDir = "/Users/kaiji/workspace/cnzhujie/PictureProcess/pic/";
     Clock c;
 
     c.start();
     ///////////////////////////////////////////////////////////////
     //左右镜像旋转
-    //flip("/home/zhujie/source.bmp","/home/zhujie/flip_LR.bmp",LR_FLIP);
+    flip(picDir + "source.bmp", picDir + "flip_LR.bmp", LR_FLIP);
     //上下镜像旋转
-    //flip("/home/zhujie/source.bmp","/home/zhujie/flip_TD.bmp",TD_FLIP);
+    flip(picDir + "source.bmp", picDir + "flip_TD.bmp", TD_FLIP);
     //中心点镜像旋转
-    //flip("/home/zhujie/source.bmp","/home/zhujie/flip_CENTER.bmp",CENTER_FLIP);
+    flip(picDir + "source.bmp", picDir + "flip_CENTER.bmp", CENTER_FLIP);
+
     //以中心点逆时针任意角度旋转
-    //flipAngle("/home/zhujie/source.bmp","/home/zhujie/flip_ANGLE_90.bmp",90);
-    //flipAngle("/home/zhujie/source.bmp","/home/zhujie/flip_ANGLE_20.bmp",20);
-    //flipAngle("/home/zhujie/source.bmp","/home/zhujie/flip_ANGLE_135.bmp",135);
-    //flipAngle("/home/zhujie/source.bmp","/home/zhujie/flip_ANGLE_180.bmp",180);
-    //flipAngle("/home/zhujie/source.bmp","/home/zhujie/flip_ANGLE_280.bmp",280);
+    flipAngle(picDir + "source.bmp", picDir + "flip_ANGLE_90.bmp", 90);
+    flipAngle(picDir + "source.bmp", picDir + "flip_ANGLE_20.bmp", 20);
+    flipAngle(picDir + "source.bmp", picDir + "flip_ANGLE_135.bmp", 135);
+    flipAngle(picDir + "source.bmp", picDir + "flip_ANGLE_180.bmp", 180);
+    flipAngle(picDir + "source.bmp", picDir + "flip_ANGLE_280.bmp", 280);
 
     //图片叠加
-    TRGB tran(255,255,255);//透明色
-    overlap("/Users/kaiji/Desktop/back.bmp","/Users/kaiji/Desktop/front.bmp","/Users/kaiji/Desktop/overlap_cpu.bmp",tran);
+    TRGB tran(255, 255, 255); //透明色
+    overlap(picDir + "back.bmp", picDir + "front.bmp", picDir + "overlap.bmp", tran);
 
     //颜色替换
-    //TRGB from(0,255,0),to(0,0,0);
-    //color_replace("/home/zhujie/blackToWhite.bmp","/home/zhujie/greenToBlack.bmp",from,to);
+    TRGB from(0, 0, 0), to(255, 255, 255);
+    colorReplace(picDir + "front.bmp", picDir + "blackToWhite.bmp", from, to);
 
     //彩色图像转化为灰色图像
-    //color_replace("","",color2gray);
-    //picture2gray("/home/zhujie/source.bmp","/home/zhujie/gray.bmp");
+    colorReplace(picDir + "source.bmp", picDir + "gray1.bmp", colorToGray);
+    pictureToGray(picDir + "source.bmp", picDir + "gray.bmp");
 
     //更改亮度
-    //scaleBrightness("/home/zhujie/brightness.bmp","/home/zhujie/scalelight.bmp",1.2);
-    //scaleBrightness("/home/zhujie/brightness.bmp","/home/zhujie/scaledark.bmp",0.5);
-    //stepBrightness("/home/zhujie/brightness.bmp","/home/zhujie/steplight.bmp",30);
-    //stepBrightness("/home/zhujie/brightness.bmp","/home/zhujie/stepdark.bmp",-30);
+    scaleBrightness(picDir + "brightness.bmp", picDir + "scalelight.bmp", 1.2);
+    scaleBrightness(picDir + "brightness.bmp", picDir + "scaledark.bmp", 0.5);
+    stepBrightness(picDir + "brightness.bmp", picDir + "steplight.bmp", 30);
+    stepBrightness(picDir + "brightness.bmp", picDir + "stepdark.bmp", -30);
 
     //更改色调
-    //tuneHue("/home/zhujie/brightness.bmp","/home/zhujie/tuneHue_30_-20_-10.bmp",30,-20,-10);
-    //tuneHue("/home/zhujie/brightness.bmp","/home/zhujie/tuneHue_-30_20_10.bmp",-30,20,10);
-    //tuneHue("/home/zhujie/brightness.bmp","/home/zhujie/tuneHue_30_-20_10.bmp",30,-20,10);
+    tuneHue(picDir + "brightness.bmp", picDir + "tuneHue_30_-20_-10.bmp", 30, -20, -10);
+    tuneHue(picDir + "brightness.bmp", picDir + "tuneHue_-30_20_10.bmp", -30, 20, 10);
+    tuneHue(picDir + "brightness.bmp", picDir + "tuneHue_30_-20_10.bmp", 30, -20, 10);
 
     //颜色反转
-    //inverseColor("/home/zhujie/source.bmp","/home/zhujie/inverseColor.bmp");
+    inverseColor(picDir + "source.bmp", picDir + "inverseColor.bmp");
 
     //图片单色化
-    //singleColor("/home/zhujie/source.bmp","/home/zhujie/singleColor_r.bmp",'r');
-    //singleColor("/home/zhujie/source.bmp","/home/zhujie/singleColor_g.bmp",'g');
-    //singleColor("/home/zhujie/source.bmp","/home/zhujie/singleColor_b.bmp",'b');
+    singleColor(picDir + "source.bmp", picDir + "singleColor_r.bmp", 'r');
+    singleColor(picDir + "source.bmp", picDir + "singleColor_g.bmp", 'g');
+    singleColor(picDir + "source.bmp", picDir + "singleColor_b.bmp", 'b');
 
     //图片缩放
-    //zoomTo("/home/zhujie/brightness.bmp","/home/zhujie/zoomTo0.8.bmp",0.8);
-    //zoomTo("/home/zhujie/brightness.bmp","/home/zhujie/zoomTo1.8.bmp",1.8);
-    //zoomToLinear("/home/zhujie/brightness.bmp","/home/zhujie/zoomToLinear0.8.bmp",0.8);
-    //zoomToLinear("/home/zhujie/brightness.bmp","/home/zhujie/zoomToLinear1.8.bmp",1.8);
+    zoomTo(picDir + "brightness.bmp", picDir + "zoomTo0.8.bmp", 0.8);
+    zoomTo(picDir + "brightness.bmp", picDir + "zoomTo1.8.bmp", 1.8);
+    zoomToLinear(picDir + "brightness.bmp", picDir + "zoomToLinear0.8.bmp", 0.8);
+    zoomToLinear(picDir + "brightness.bmp", picDir + "zoomToLinear1.8.bmp", 1.8);
 
     //循环移位
-    //circularShift("/home/zhujie/source.bmp","/home/zhujie/circularShift_100_0.bmp",100,0);
-    //circularShift("/home/zhujie/source.bmp","/home/zhujie/circularShift_0_-100.bmp",0,-100);
-    //circularShift("/home/zhujie/source.bmp","/home/zhujie/circularShift_100_-100.bmp",100,-100);
+    circularShift(picDir + "source.bmp", picDir + "circularShift_100_0.bmp", 100, 0);
+    circularShift(picDir + "source.bmp", picDir + "circularShift_0_-100.bmp", 0, -100);
+    circularShift(picDir + "source.bmp", picDir + "circularShift_100_-100.bmp", 100, -100);
 
     //二值化
-    //binaryzationOtsu("/home/zhujie/brightness.bmp","/home/zhujie/brightness_otsn.bmp");    
-    //binaryzation("/home/zhujie/brightness.bmp","/home/zhujie/brightness_binaryzation.bmp",128);
-    //binaryzationOtsu("/home/zhujie/source.bmp","/home/zhujie/source_otsn.bmp");
-    //binaryzation("/home/zhujie/source.bmp","/home/zhujie/source_binaryzation.bmp",128);
-    //binaryzationOtsu("/home/zhujie/front.bmp","/home/zhujie/front_otsn.bmp");
-    //binaryzation("/home/zhujie/front.bmp","/home/zhujie/front_binaryzation.bmp",10);
+    binaryzationOtsu(picDir + "brightness.bmp", picDir + "brightness_otsn.bmp");
+    binaryzation(picDir + "brightness.bmp", picDir + "brightness_binaryzation.bmp", 128);
+    binaryzationOtsu(picDir + "source.bmp", picDir + "source_otsn.bmp");
+    binaryzation(picDir + "source.bmp", picDir + "source_binaryzation.bmp", 128);
+    binaryzationOtsu(picDir + "front.bmp", picDir + "front_otsn.bmp");
+    binaryzation(picDir + "front.bmp", picDir + "front_binaryzation.bmp", 10);
 
     //平滑
-    //smooth("/home/zhujie/brightness.bmp","/home/zhujie/smooth.bmp");
+    smooth(picDir + "brightness.bmp", picDir + "smooth.bmp");
 
     //霓虹处理
-    //neon("/home/zhujie/brightness.bmp","/home/zhujie/brightness_neon.bmp");
-    //neon("/home/zhujie/source.bmp","/home/zhujie/source_neon.bmp");
-    //neon("/home/zhujie/front.bmp","/home/zhujie/front_neon.bmp");
+    neon(picDir + "brightness.bmp", picDir + "brightness_neon.bmp");
+    neon(picDir + "source.bmp", picDir + "source_neon.bmp");
+    neon(picDir + "front.bmp", picDir + "front_neon.bmp");
 
     //锐化处理
-    //sharpen("/home/zhujie/brightness.bmp","/home/zhujie/brightness_sharpen.bmp",0.25);
-    //sharpen("/home/zhujie/source.bmp","/home/zhujie/source_sharpen.bmp",0.25);
-    //sharpen("/home/zhujie/front.bmp","/home/zhujie/front_sharpen.bmp",0.25);
+    sharpen(picDir + "brightness.bmp", picDir + "brightness_sharpen.bmp", 0.25);
+    sharpen(picDir + "source.bmp", picDir + "source_sharpen.bmp", 0.25);
+    sharpen(picDir + "front.bmp", picDir + "front_sharpen.bmp", 0.25);
 
     //锐化处理
-    //cameo("/home/zhujie/brightness.bmp", "/home/zhujie/brightness_cameo.bmp", 128);
-    //cameo("/home/zhujie/source.bmp", "/home/zhujie/source_cameo.bmp", 128);
-    //cameo("/home/zhujie/front.bmp", "/home/zhujie/front_cameo.bmp", 128);
+    cameo(picDir + "brightness.bmp", picDir + "brightness_cameo.bmp", 128);
+    cameo(picDir + "source.bmp", picDir + "source_cameo.bmp", 128);
+    cameo(picDir + "front.bmp", picDir + "front_cameo.bmp", 128);
 
     c.end();
 
@@ -158,7 +160,7 @@ int main() {
  * @param from
  * @param to
  */
-void color_replace(string pic, string save, TRGB& from, TRGB& to) {
+void colorReplace(string pic, string save, TRGB& from, TRGB& to) {
     RGBData *pBmp = new RGBData(pic);
 
     long w = pBmp->getW();
@@ -182,7 +184,7 @@ void color_replace(string pic, string save, TRGB& from, TRGB& to) {
  * @param save
  * @param pColorReplaceFunc
  */
-void color_replace(string pic, string save, ColorReplaceFunc pColorReplaceFunc) {
+void colorReplace(string pic, string save, ColorReplaceFunc pColorReplaceFunc) {
     RGBData *pBmp = new RGBData(pic);
 
     long w = pBmp->getW();
@@ -202,7 +204,7 @@ void color_replace(string pic, string save, ColorReplaceFunc pColorReplaceFunc) 
  * 将某个彩色的颜色值转化为灰度
  * @param t
  */
-void color2gray(TRGB& t) {
+void colorToGray(TRGB& t) {
     static unsigned char gray;
     gray = (t.r * 299 + t.g * 587 + t.b * 114 + 500) / 1000;
     t.r = gray;
@@ -215,8 +217,8 @@ void color2gray(TRGB& t) {
  * @param pic
  * @param save
  */
-void picture2gray(string pic, string save) {
-    color_replace(pic, save, color2gray);
+void pictureToGray(string pic, string save) {
+    colorReplace(pic, save, colorToGray);
 }
 
 /**
@@ -737,7 +739,7 @@ void binaryzationOtsu(string pic, string save) {
     for (unsigned long j = 0; j < h; j++) {
         for (unsigned long i = 0; i < w; i++) {
             pRgb = pArr + j * w + i;
-            color2gray(*pRgb); //转化为灰度颜色
+            colorToGray(*pRgb); //转化为灰度颜色
             ihist[pRgb->b]++;
         }
     }
@@ -814,7 +816,7 @@ void binaryzationBernsen(string pic, string save, unsigned char globalThreshold,
     for (j = 0; j < high; j++) {
         for (i = 0; i < wide; i++) {
             pRgb = pArrOld + j * wide + i;
-            color2gray(*pRgb); //转化为灰度颜色
+            colorToGray(*pRgb); //转化为灰度颜色
         }
     }
     //遍历所有像素
@@ -875,7 +877,7 @@ void binaryzation(string pic, string save, unsigned char threshold) {
     long s = w*h;
     for (long i = 0; i < s; i++) {
         pRgb = pArr + i;
-        color2gray(*pRgb); //转化为灰度颜色
+        colorToGray(*pRgb); //转化为灰度颜色
         if (pRgb->b >= threshold) {
             pRgb->b = pRgb->g = pRgb->r = 255;
         } else {
