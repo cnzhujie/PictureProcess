@@ -1,83 +1,75 @@
 #include "RGBData.h"
 
-RGBData::RGBData(unsigned long w,unsigned long h)
-{
-    m_w=w;
-    m_h=h;
-    m_pArr=new TRGB[m_w*m_h];
-}
-RGBData::RGBData(string fn)
-{
-    m_w=0;
-    m_h=0;
-    m_pArr=NULL;
-    LoadFromFile(fn);
+RGBData::RGBData(unsigned long w, unsigned long h) {
+    this->w = w;
+    this->h = h;
+    this->pArr = new TRGB[this->w * this->h];
 }
 
-RGBData::~RGBData()
-{
-    delete[] m_pArr;
+RGBData::RGBData(string fn) {
+    this->w = 0;
+    this->h = 0;
+    this->pArr = NULL;
+    loadFromFile(fn);
 }
 
-void RGBData::Init(TRGB& rgb)
-{
-    if(m_w==0 || m_h==0 || m_pArr==NULL)return;
-    unsigned long size=m_w*m_h;
-    for(unsigned long i=0;i<size;i++)
-    {
-        m_pArr[i].r=rgb.r;
-        m_pArr[i].g=rgb.g;
-        m_pArr[i].b=rgb.b;
+RGBData::~RGBData() {
+    delete[] this->pArr;
+}
+
+void RGBData::init(TRGB& rgb) {
+    if (this->w == 0 || this->h == 0 || this->pArr == NULL)return;
+    unsigned long size = this->w * this->h;
+    for (unsigned long i = 0; i < size; i++) {
+        this->pArr[i].r = rgb.r;
+        this->pArr[i].g = rgb.g;
+        this->pArr[i].b = rgb.b;
     }
 }
 
-void RGBData::SetColor(unsigned long i,unsigned long j,TRGB& rgb)
-{
-    if(i>=m_w || j>=m_h || m_pArr==NULL)return;
-    unsigned long pos=j*m_w+i;
-    m_pArr[pos].r=rgb.r;
-    m_pArr[pos].g=rgb.g;
-    m_pArr[pos].b=rgb.b;
+void RGBData::setColor(unsigned long i, unsigned long j, TRGB& rgb) {
+    if (i >= this->w || j >= this->h || this->pArr == NULL)return;
+    unsigned long pos = j * this->w + i;
+    this->pArr[pos].r = rgb.r;
+    this->pArr[pos].g = rgb.g;
+    this->pArr[pos].b = rgb.b;
 }
 
-bool RGBData::SaveToFile(string fn)
-{
-    if(m_w==0 || m_h==0 || m_pArr==NULL)return false;
-    FILE *fp=fopen(fn.c_str(),"wb");
-    if(!fp)return false;
-    RGB2BMP((char *)m_pArr,m_w,m_h,fp);
+bool RGBData::saveToFile(string fn) {
+    if (this->w == 0 || this->h == 0 || this->pArr == NULL)return false;
+    FILE *fp = fopen(fn.c_str(), "wb");
+    if (!fp)return false;
+    RGB2BMP((char *) this->pArr, this->w, this->h, fp);
     fclose(fp);
     return true;
 }
-bool RGBData::LoadFromFile(string fn)
-{
-    if(m_pArr)delete[] m_pArr;
-    m_w=0;
-    m_h=0;
-    m_pArr=NULL;
+
+bool RGBData::loadFromFile(string fn) {
+    if (this->pArr)delete[] this->pArr;
+    this->w = 0;
+    this->h = 0;
+    this->pArr = NULL;
 
     BITMAPFILEHEADER bitMapFileHeader;
     BITMAPINFOHEADER bitMapInfoHeader;
-    if(! readBmpInfo(fn.c_str(),bitMapFileHeader,bitMapInfoHeader) )return false;
+    if (!readBmpInfo(fn.c_str(), bitMapFileHeader, bitMapInfoHeader))return false;
 
-    m_w = bitMapInfoHeader.biWidth;
-    m_h = bitMapInfoHeader.biHeight;
-    m_pArr=new TRGB[m_w*m_h];
-    return readBmpData(fn.c_str(),m_pArr,m_w*m_h);
+    this->w = bitMapInfoHeader.biWidth;
+    this->h = bitMapInfoHeader.biHeight;
+    this->pArr = new TRGB[this->w * this->h];
+    return readBmpData(fn.c_str(), this->pArr, this->w * this->h);
 }
-void RGBData::Overlap(const RGBData& another,TRGB& transparent)
-{
-    double wZoom = m_w / another.m_w;
-    double hZoom = m_h / another.m_h;
-    unsigned long pos,pos2;
-    for(unsigned int i=0;i<another.m_w;i++)
-    {
-            for(unsigned int j=0;j<another.m_h;j++)
-            {
-                    pos = j*another.m_w+i;
-                    pos2 = j*m_w*hZoom+i*wZoom;
-                    if(another.m_pArr[pos] == transparent)continue;
-                    m_pArr[pos2] = another.m_pArr[pos];
-            }
+
+void RGBData::overlap(const RGBData& another, TRGB& transparent) {
+    double wZoom = this->w / another.w;
+    double hZoom = this->h / another.h;
+    unsigned long pos, pos2;
+    for (unsigned int i = 0; i < another.w; i++) {
+        for (unsigned int j = 0; j < another.h; j++) {
+            pos = j * another.w + i;
+            pos2 = j * this->w * hZoom + i*wZoom;
+            if (another.pArr[pos] == transparent)continue;
+            this->pArr[pos2] = another.pArr[pos];
+        }
     }
 }

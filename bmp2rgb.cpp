@@ -124,8 +124,8 @@ bool readBmpData(const char* bmpName,LazyBuffer& buff)
     }
     //申请位图数据所需的空间，读位图数据进内存
     long biSizeImage=(long)bitMapInfoHeader.biSizeImage;
-    buff.InitToUse(biSizeImage);
-    fread((char *)buff.GetBuff(),1,biSizeImage,fp);
+    buff.initToUse(biSizeImage);
+    fread((char *)buff.getBuff(),1,biSizeImage,fp);
     fclose(fp);
 
     return true;
