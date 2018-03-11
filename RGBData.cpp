@@ -39,7 +39,7 @@ bool RGBData::saveToFile(string fn) {
     if (this->w == 0 || this->h == 0 || this->pArr == NULL)return false;
     FILE *fp = fopen(fn.c_str(), "wb");
     if (!fp)return false;
-    RGB2BMP((char *) this->pArr, this->w, this->h, fp);
+    saveRgbToBmpFile((char *) this->pArr, this->w, this->h, fp);
     fclose(fp);
     return true;
 }
