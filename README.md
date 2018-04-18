@@ -19,7 +19,7 @@
 
 设定透明色为`#000`，则合成的图片如下所示：
 
-<img src="https://raw.githubusercontent.com/cnzhujie/PictureProcess/master/pic/overlap.bmp" width="400">
+<img src="http://cnzhujie.bj.bcebos.com/github/pictureprocess/overlap.bmp" width="400">
 
 ## 二、图片翻转
 
